@@ -30,7 +30,6 @@ public class Question5
     int highestKey = 0;
 
     Scanner in = new Scanner(System.in);
-
     int inputLoop = in.nextInt();
 
     for (int i = 0; i < inputLoop; i++) {
