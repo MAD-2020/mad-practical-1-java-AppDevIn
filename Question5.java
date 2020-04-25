@@ -15,7 +15,7 @@ public class Question5
      *     > 3
      *     > 4
      *     4
-     * 
+     *
      *    e.g.
      *     > 4
      *     > 2
@@ -28,38 +28,33 @@ public class Question5
 
     HashMap<Integer, Integer> numbers = new HashMap<Integer, Integer>();
     int highestKey = 0;
+    int highest = 0;
 
     Scanner in = new Scanner(System.in);
     int inputLoop = in.nextInt();
 
     for (int i = 0; i < inputLoop; i++) {
       int input = in.nextInt();
-      
+
       if(numbers.containsKey(input)){
         numbers.replace(input,numbers.get(input) + 1);
       }else {
         numbers.put(input,1);
       }
-      
+
 
     }
-
-
-
-
 
 
 
     for (int i :
             numbers.keySet()) {
 
-      int highest = 0;
-
-      highestKey = numbers.get(i);
 
       if(numbers.get(i) > highest){
         highest = numbers.get(i);
         highestKey = i;
+
       }
 
 
@@ -67,9 +62,9 @@ public class Question5
     }
 
     System.out.println(highestKey);
-    
-    
-    
+
+
+
 
 
 
@@ -78,4 +73,3 @@ public class Question5
 
   }
 }
-
